@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 public class ReverseArray {
 public static void reversearray(int arr[]) {
-	int i;
+	int i,temp;
 	int j=arr.length-1;
 	for(i=0;i<arr.length/2;i++) {
-		int temp=arr[i];
+		
+		 temp=arr[i];
 		arr[i]=arr[j];
 		arr[j]=temp;
 		j--;

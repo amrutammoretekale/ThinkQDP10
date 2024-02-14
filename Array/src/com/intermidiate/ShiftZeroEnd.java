@@ -1,28 +1,40 @@
 package com.intermidiate;
 
-public class ShiftZeroEnd {
-	static void shiftZeros(int ar[])
-	{
+import java.util.Arrays;
 
-		int count=0;
-		for(int i=0;i<ar.length;i++)
-		{
-			if(ar[i]!=0)
-			{
-				ar[count]=ar[i];
-				count++;  
-			}
-		}
-		
-		while(count<ar.length)
-		{
-			ar[count++]=0;
-		}
+public class ShiftZeroEnd {
+	static void shiftzeroEnd(int arr[]) {
+	
+    int temp[]=new int[arr.length];
+	int j=arr.length-1;
+	for(int i=0;i<arr.length;i++)
+	{
+		 if(arr[i]==0)
+		 {
+			 temp[j]=arr[i];
+			 j--;
+			 
+		 }
+		 
 	}
+for(int i=arr.length-1;i>=0;i--)
+	{
+		
+		 if(arr[i]!=0)
+		 {
+			 temp[j]=arr[i];
+			 j--;
+			 			 }
+		 
+	}
+	System.out.println(Arrays.toString(temp));
+	
+
+}
 	
 	public static void main(String[] args) {
-		int arr[] = { 5, 6, 0, -7, 5, 0, 4, 0, 5, 6, 2 };
-		shiftZeros(arr);
+		int arr[]= {1,2,3,0,5,0,10};
+		shiftzeroEnd(arr);
 
 	}
 
