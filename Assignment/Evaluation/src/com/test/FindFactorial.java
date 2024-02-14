@@ -1,0 +1,20 @@
+package com.test;
+
+public class FindFactorial {
+	public static void finfact(int n) {
+		int fact=1;
+		int sum=0;
+		for(int i=1;i<=n;i++) {
+			fact=fact*i;
+			sum=sum+fact;
+		}
+		System.out.println("sum of Factorial is:"+sum);
+	}
+
+	public static void main(String[] args) {
+		
+		finfact(5); 
+
+	}
+
+}
