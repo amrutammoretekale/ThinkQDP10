@@ -20,7 +20,7 @@ public class SumofPrimeNo {
 
 	public static void main(String[] args) {
 		int arr[]=new int[] {12,15,35,14};
-
+		checkprimeno(arr);
 	}
 
 }

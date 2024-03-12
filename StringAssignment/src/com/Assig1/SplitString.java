@@ -8,6 +8,11 @@ public class SplitString {
 	public static void main(String[] args) {
 		String str="Hello$world";
 		String s[]=str.split("\\s");
+		for(int i=0;i<s.length;i++) {
+			if(i=='$') {
+				continue;
+			}
+		}
 		System.out.println(Arrays.toString(s));
 	}
 

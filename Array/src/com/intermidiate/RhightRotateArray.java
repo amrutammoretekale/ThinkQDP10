@@ -16,7 +16,7 @@ public class RhightRotateArray {
 		 int arr[]= {1,2,3,4,5};
 		 System.out.println(Arrays.toString(arr));
 		
-		 for(int i=0;i<3;i++) {
+		for(int i=0;i<3;i++) {
 	     rotateonce(arr);
 	     System.out.println(Arrays.toString(arr));
 			}

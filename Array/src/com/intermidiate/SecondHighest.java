@@ -7,25 +7,25 @@ public class SecondHighest {
 	   int highest=Integer.MIN_VALUE;//arr[0];
 	   int shighest=Integer.MIN_VALUE;//arr[0];
 	   
-	   for(int x:ar) {
-		   if(x>highest) {
-			   shighest=highest;
-			   highest=x;
-			   }
-		   else if(x>shighest) {
-			   shighest=x;
-		   }
-	   } 
-
-//	   for(int i=0;i<ar.length;i++) {
-//		   if(ar[i]>highest) {
+//	   for(int x:ar) {
+//		   if(x>highest) {
 //			   shighest=highest;
-//			   highest=ar[i];
+//			   highest=x;
 //			   }
-//		   else if(ar[i]>shighest) {
-//			   shighest=ar[i];
+//		   else if(x>shighest) {
+//			   shighest=x;
 //		   }
-//	   }
+//	   } 
+
+	   for(int i=0;i<ar.length;i++) {
+		   if(ar[i]>highest) {
+			   shighest=highest;
+			   highest=ar[i];
+			   }
+		   else if(ar[i]>shighest) {
+			   shighest=ar[i];
+		   }
+	   }
 	return shighest; 
    }
 	public static void main(String[] args) {

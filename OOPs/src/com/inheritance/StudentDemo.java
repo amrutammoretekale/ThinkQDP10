@@ -1,8 +1,8 @@
 package com.inheritance;
 
 class Student{
-	private int id;
-	private String name;
+	protected int id;
+	protected String name;
 	
 	Student(){
 		
@@ -29,8 +29,8 @@ class Student{
 }
 
 class School extends Student{
-	private int std;
-	private String Sname;
+	protected int std;
+	protected String Sname;
 	
    public School(){
 		
@@ -52,15 +52,53 @@ class School extends Student{
     public String getSname() {
     	return Sname;
     }
+	@Override
+	public String toString() {
+		return "School [std=" + std + ", Sname=" + Sname + ", id=" + id + ", name=" + name + "]";
+	}
+    
 	
 }
-class College extends Student{
-	//protected 
+class College extends School{
+	private int cno;
+	private String cname;
+	College(){
+		
+	}
+	College(int id,String name,int std,String Sname,int cno,String cname){
+		super(id,name,std,Sname);
+		this.cno=cno;
+		this.cname=cname;
+		
+	}
+	public int getCno() {
+		return cno;
+	}
+	public void setCno(int cno) {
+		this.cno = cno;
+	}
+	public String getCname() {
+		return cname;
+	}
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+	@Override
+	public String toString() {
+		return "College [cno=" + cno + ", cname=" + cname + ", std=" + std + ", Sname=" + Sname + ", id=" + id
+				+ ", name=" + name + "]";
+	}
+	
 }
 public class StudentDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		School s1=new School(1,"Arnav",1233,"DY Patil");
+		System.out.println(s1);
+		
+		College c1=new College(2,"Supriya",4587,"MS School",45,"Dy patil collage");
+		System.out.println(c1);
+		
 
 	}
 

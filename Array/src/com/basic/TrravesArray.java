@@ -1,5 +1,7 @@
 package com.basic;
 
+import java.util.Arrays;
+
 public class TrravesArray {
 
 	public static void main(String[] args) {
@@ -20,10 +22,12 @@ public class TrravesArray {
 		 for(int i=0;i<arr1.length;i++) {
 			 System.out.println(arr1[i]);
 		 }
+		
 		 int i=0;
 		for(i=0;i<arr.length;i++) {
 			arr[0]=90;
 		}
+		System.out.println(arr[0]);
 
 	}
 

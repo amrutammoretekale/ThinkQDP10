@@ -4,10 +4,12 @@ import java.util.Arrays;
 
 public class PassinArray {
         static void squareElements(int ar[]) {
+        	
         	for (int i=0;i<ar.length;i++) {
         		ar[i]=ar[i]*ar[i];
         	}
         	System.out.println("Inside method");
+        	
         	System.out.println(Arrays.toString(ar));
         }
         int sumofElements(int ar[]) {

@@ -6,7 +6,7 @@ public class OverloadMethodUsingStatic {
 		System.out.println("In float");
 		System.out.println(n);
 	}
-       void display1(char n) {
+      static void display1(char n) {
 		System.out.println("in cahr");
 		System.out.println(n);
 	}

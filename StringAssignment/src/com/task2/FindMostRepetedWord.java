@@ -1,13 +1,20 @@
 package com.task2;
 
+import java.util.Arrays;
+
 public class FindMostRepetedWord {
 	static void findmostreapetedword(String st) {
-		String s[]=st.split("\\s");
+		String[] s=st.split("\\s");
+		int i;
+		int max[]=new int[2];
+		String maxct[]=new String[2];
 		
 		int count = 0;
-		String max=s[0];
+		String max1=s[0];
+		int maxindex=0;
+		int index=0;
 		boolean status;
-		for(int i=0;i<s.length;i++) {
+		for(i=0;i<s.length;i++) {
 			count=1;
 			status=false;
 			for(int k=i-1;k>=0;k--) {
@@ -24,15 +31,17 @@ public class FindMostRepetedWord {
 				}
 				if(count>1) {
 					
-					max=s[i];
+					max[maxindex++]=count;
+					
+					maxct[index++]=s[i];
 				}
 			}
 			
-		}System.out.println("Most reapeted char:"+max);
+		}System.out.println("Most reapeted char:"+Arrays.toString(maxct));
 	}
 
 	public static void main(String[] args) {
-		String str="a big cat rolling on big mat big ";
+		String str="a big cat rolling on big mat big cat ";
 		findmostreapetedword(str);
 
 	}

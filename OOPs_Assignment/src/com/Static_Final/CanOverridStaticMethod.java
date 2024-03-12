@@ -52,6 +52,7 @@ class Employee2 extends Employee{
 		Ename = ename;
 	}
 //No-we can not override static method becz static method bound with class
+	//@Override
 	static void display() {
 		System.out.println("Employee Salary Emp2...");
 	}

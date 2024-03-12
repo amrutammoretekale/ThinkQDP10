@@ -3,8 +3,8 @@ package cotainment;
 import java.util.Scanner;
 
 public class MyCollege {
-	Scanner sc=new Scanner(System.in);
-	public void enterStudentDetails(Student s,Course c) {
+	static Scanner sc=new Scanner(System.in);
+	public static void enterStudentDetails(Student s,Course c) {
 		System.out.println("Enter Student id");
 		s.setSid(sc.nextInt());
 		System.out.println("Enter Student Sname ");
@@ -91,6 +91,13 @@ public static void main(String[] args) {
 
 		  System.out.println(stud1.getCourse().getFees());
 		  System.out.println(stud3.getCourse().getFees());
+		  System.out.println("-------------------------------------------");
+		  Student st=new Student();
+		  Course co=new Course();
+		  
+		  enterStudentDetails(st, co);
+		  System.out.println(st);
+		  System.out.println(co);
 		
 	}
 

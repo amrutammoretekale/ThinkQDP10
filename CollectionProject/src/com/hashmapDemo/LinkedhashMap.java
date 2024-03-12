@@ -1,6 +1,6 @@
-package com.inheritance;
+package com.hashmapDemo;
 
-public class SinglInheritance {
+public class LinkedhashMap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
